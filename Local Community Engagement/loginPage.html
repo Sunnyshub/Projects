@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Login</title>
+  <meta name="author" content="Sunny Sur">
+  <meta name="description" content="First page when opening app">
+  <meta name="keywords" content="pwa,workshop,fontys,smart mobile">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+</head>
+
+<body>
+  <header class="title-header">
+      <h1>CiviLink</h1>
+  </header>
+
+  <main>
+
+    <img id="loginPagePf" src="images/LoginPage/loginPagePf.png" alt="">
+
+    <div id="topText">
+    <h2 class="blueText">Create an account to explore your neighborhood and upcoming workshops.</h2>
+    </div>
+
+    <button class="login-button" onclick="window.location.href='explanation.html'">Create Account</button>
+
+    <h2 class="blueText">Or</h2>
+
+    <button class="login-button" onclick="window.location.href='explanation.html'">Login</button>
+
+    <div class="count-column">
+      <div class="elder-count">
+        <h2 class="blueText">40.000</h2>
+        <h3 class="blueText">Youth</h3>
+      </div>
+  
+      <div class="youth-count">
+        <h2 class="blueText">20.000</h2>
+        <h3 class="blueText">Elders</h3>
+      </div>
+    </div>
+   
+
+    <img id="second-img" class="big-img-low" src="images/LoginPage/youthHelpsOld1.png" alt="">
+  </main>
+
+  <footer></footer>
+
+  <script src="js/scripts.js" type="text/javascript"></script>
+</body>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js').then(function (registration) {
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function (err) {
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  }
+</script>
+
+</html>

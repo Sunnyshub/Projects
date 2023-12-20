@@ -1,0 +1,172 @@
+body{
+    background-color: #A30000;
+
+}
+
+a{
+    cursor: pointer;
+}
+
+/*new*/
+@keyframes open1 {
+    0%{left: 31%; transform: rotate(0%); }
+    100%{left: 20%; transform: rotate(-45%);}
+    
+}
+
+@keyframes open2 {
+    0%{left: 50%; transform: rotate(0%); }
+    100%{left: 61%; transform: rotate(-45%);}
+    
+}
+
+@keyframes open3 {
+    0%{top: 6%; }
+    100%{top: 0%; background-color: #A30000;}
+    
+}
+
+@keyframes open4 {
+    0%{top: 9%; }
+    100%{top: 3%; background-color: #A30000;}
+    
+}
+
+@keyframes open5 {
+    0%{ opacity: 0%;}
+    100%{opacity: 100%;}
+    
+}
+
+/*new*/
+
+.upperleftcornersquare{
+    position: absolute;
+    background-color: white;
+    height: 30%;
+    width: 16%;
+    left: 31%;
+    top: 28%;
+    /*new*/
+    animation-name: open1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /*new*/
+
+}
+
+.upperrightcornersquare{
+    position: absolute;
+    background-color: white;
+    height: 30%;
+    width: 16%;
+    left: 50%;
+    top: 28%;
+    /*new*/
+    animation-name: open2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /*new*/
+}
+
+.downleftcornersquare{
+    position: absolute;
+    background-color: white;
+    height: 30%;
+    width: 16%;
+    left: 31%;
+    top: 63%;
+     /*new*/
+     animation-name: open1;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     /*new*/
+}
+.downrightcornersquare{
+    position: absolute;
+    background-color: white;
+    height: 30%;
+    width: 16%;
+    left: 50%;
+    top: 63%;
+    /*new*/
+    animation-name: open2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /*new*/
+}
+
+.tieleft{
+    background-color: white;
+    position: absolute;
+    width: 7%;
+    height: 14%;
+    top: 6%;
+    left: 41.5%;
+    border-radius: 50% 50% 0%;
+    /*new*/
+    animation-name: open3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /*new*/
+    
+    
+}
+
+.tieright{
+    background-color: white;
+    position: absolute;
+    width: 7%;
+    height: 14%;
+    top: 6%;
+    left: 47.5%;
+    border-radius: 50% 50% 50% 0%;
+    /*new*/
+    animation-name: open3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /*new*/
+}
+
+.tieleftinner{
+    background-color: #A30000;
+    position: absolute;
+    width: 4%;
+    height: 8%;
+    top: 9%;
+    left: 43%;
+    border-radius: 50% 50% 0%;
+    /*new*/
+    animation-name: open4;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /*new*/
+}
+
+
+.tierightinner{
+    background-color: #A30000;
+    position: absolute;
+    width: 4%;
+    height: 8%;
+    top: 9%;
+    left: 49%;
+    border-radius: 50% 50% 50% 0%;
+    /*new*/
+    animation-name: open4;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /*new*/
+}
+
+/*new*/
+.imageHolder{
+    position: absolute;
+    left: 44%;
+    margin-top: 38%;
+    animation-name: open5;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+/*new*/

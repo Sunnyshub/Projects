@@ -1,0 +1,232 @@
+body{
+    overflow: hidden;
+}
+
+.background{
+    position: absolute;
+}
+.black{
+    width: 1930px;
+    height: 1100px;
+    background-color: black;
+    z-index: -1;
+    position: absolute;
+    left: -10px;
+    top: -11px;
+    animation-name: blacc;
+    animation-duration: 5s;
+    animation-delay: 14s;
+}
+
+#bacc{
+    width: 1940px;
+    top: -12px;
+    left: -8px;
+    position: absolute;
+    animation-duration: 14s;
+    animation-name: baccground;
+}
+
+#logo{
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    width: 1500px;
+    animation-delay: 5s;
+    animation-duration: 5s;
+    animation-name: logo;
+    z-index: -1;
+}
+
+#vince{
+    position:absolute;
+    width: 900px;
+    left: 470px;
+    top: 400px;
+    animation-delay: 10s;
+    z-index: -1;
+    animation-duration: 4s;
+    animation-name: vince;
+}
+#created{
+    position: absolute;
+    width: 900px;
+    left: 470px;
+    top: 400px;
+    animation-delay: 10s;
+    animation-duration: 5s;
+    z-index: -1;
+    animation-name: created;
+}
+
+@keyframes blacc{
+    1% {z-index: 1;}
+    100% {z-index: 1;}
+}
+
+@keyframes baccground{
+    1% {left: -20px; top: -14px;}
+    2% {left: -15px; top: -5px;}
+    3% { left: -10px; top: -30px;}
+    10% {left: -1000px; width: 3000px;}
+    11% {-webkit-filter: blur(50px);}
+    20% {-webkit-filter: blur(0px);}
+    40% {width: 1920px; left: -20px; top: -12px;}
+    41% {width: 3000px; left: -20px; top: -400px;}
+    49% {width: 3000px; left: -1000px; transform: rotate(0deg);top: -400px;}
+    50% {width: 4000px; left: -500px; transform: rotate(180deg); top: -500px;}
+    55% {width: 4000px; left: -500px; transform: rotate(180deg); top: -500px;}
+    56% {width: 4000px; left: -50px; transform: rotate(0deg); top: -500px;}
+    70% {-webkit-filter: blur(0px);}
+    71% {-webkit-filter: blur(10px);}
+    100% {-webkit-filter: blur(10px);}
+    
+}
+
+@keyframes logo{
+    0% {z-index: -1;}
+    100% {z-index: 1;}
+}
+
+@keyframes vince{
+    0% {z-index: 1;}
+    25% {z-index: -1;}
+    50% {z-index: 1;}
+    75% {z-index: -1;}
+    100% {z-index: 1;};
+
+}
+
+@keyframes created{
+    0% {z-index: 1;}
+    80% {z-index: 1;}
+    83% {z-index: -1}
+}
+
+/* Bar movement */
+
+@keyframes yellowbar1{
+    0% {z-index: 1;}
+    100% {width: 2500px; left: -1060px; top: 0px;}
+}
+
+@keyframes yellowbar2{
+    0%{z-index: 1;}
+    100% {width: 2500px; top: 0px; left: 616px;}
+}
+
+@keyframes yellowbar3{
+    0% {z-index: 1;}
+    100% {width: 2500px; left: -1060px; top: 1760px;}
+}
+
+@keyframes yellowbar4{
+    0% {z-index: 1;}
+    100% {width: 2500px; top: 1760px; left: 616px;}
+
+}
+
+@keyframes pinkbars{
+    0% {z-index: 1;}
+}
+
+.upperleftbar{
+    background-color: yellow;
+    width: 100px;
+    height: 30px;
+    z-index: -1;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 860px;
+    top: 400px;
+    animation-name: yellowbar1;
+    animation-duration: 2s;
+    animation-delay: 10s;
+}
+
+.upperleftbarpink{
+    background-color: pink;
+    width: 100px;
+    height: 15px;
+    z-index: -1;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 860px;
+    top: 420px;
+}
+
+.upperrightbar{
+    background-color: yellow;
+    width: 100px;
+    height: 30px;
+    z-index: -1;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 916px;
+    top: 400px;
+    animation-name: yellowbar2;
+    animation-duration: 2s;
+    animation-delay: 10s;
+}
+
+.upperrightbarpink{
+    background-color: pink;
+    width: 70px;
+    height: 15px;
+    z-index: -1;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 925px;
+    top: 420px;
+}
+
+.downleftbar{
+    background-color: yellow;
+    width: 100px;
+    height: 30px;
+    z-index: -1;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 860px;
+    top: 460px;
+    animation-name: yellowbar3;
+    animation-duration: 2s;
+    animation-delay: 10s;
+}
+
+.downleftbarpink{
+    background-color: pink;
+    width: 70px;
+    height: 15px;
+    z-index: -1;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 880px;
+    top: 455px;
+}
+
+.downrightbar{
+    background-color: yellow;
+    width: 100px;
+    height: 30px;
+    z-index: -1;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 910px;
+    top: 460px;
+    animation-name: yellowbar4;
+    animation-duration: 2s;
+    animation-delay: 10s;
+}
+
+.downrightbarpink{
+    background-color: pink;
+    width: 80px;
+    height: 15px;
+    z-index: -1;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 910px;
+    top: 460px;
+}
+

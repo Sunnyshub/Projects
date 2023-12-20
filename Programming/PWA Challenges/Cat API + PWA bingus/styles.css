@@ -1,0 +1,38 @@
+body{
+    background-image:url(images/pop-cat.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cat-image{
+    max-width: 400px;  
+    max-width: 400px;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div-cat{
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#titlething{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: blueviolet;
+}
+
+#new-image-button{
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: blueviolet;
+
+}

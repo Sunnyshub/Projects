@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home</title>
+    <meta name="author" content="Christiyan Borisov">
+    <meta name="description" content="Home page (forum) of duo case application">
+    <meta name="keywords" content="pwa, DuoCase, fontys ,smart mobile, community engagement">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+</head>
+
+<body class="home">
+    <section class="static">
+        <header class="title-header-home">
+            <ul>
+                <li>
+                    <h1 id="hometext">Home</h1>
+                </li>
+                <li>
+                    <h3 id="tiertext">Tier: Novice Helper</h3>
+                </li>
+            </ul>
+        </header>
+        <div class="filter-container">
+            <ul class="filter-bar">
+                <li><a href="#volunteers">Volunteers</a></li>
+                <li><a href="#help-seekers">Help Seekers</a></li>
+                <li><a href="#government">Government</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <main>
+        <div class="space">
+        </div>
+
+        <section>
+            <div class="container">
+                <div class="container-left">
+                    <img src="images/Leaderboard/grandpa.png" alt="User Image" class="user-image">
+                </div>
+                <div class="container-right">
+                    <h2>Jan (Help Seeker)</h2>
+                    <p>Hello youngsters and youth of today :) Today I ask your help for helping me paint my door.
+                        Unfortunately I’m too old and...</p>
+                    <a href="path-to-read-more.html">Read more...</a>
+                    <div class="responses">
+                        <a href="">View 10 responses</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container government">
+                <div class="container-left">
+                    <img src="images/Leaderboard/youngMaleUserPf.png" alt="User Image" class="user-image">
+                </div>
+                <div class="container-right">
+                    <h2>Veldhoven Municipality</h2>
+                    <p>Dear citizens on the 3rd of January we will all perform a public cleanup.</p>
+                    <a href="path-to-read-more.html">Read more...</a>
+                    <div class="responses">
+                        <a href="">View 10 responses</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <div id="addPostModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form id="postForm">
+                    <label for="postTitle">Title:</label>
+                    <input type="text" id="postTitle" name="postTitle" required><br><br>
+                    <label for="postContent">Content:</label>
+                    <textarea id="postContent" name="postContent" required></textarea><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+
+        <button class="add-activity-button-home">Add post</button>
+
+
+    </main>
+
+    <footer></footer>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-navbar">
+        <a href="home.html" class="nav-item">
+            <img src="images/FooterIcons/footer-home.png" alt="Home">
+            <p>Home</p>
+        </a>
+        <a href="map.html" class="nav-item">
+            <img src="images/FooterIcons/footer-compass.png" alt="Discover">
+            <p>Discover</p>
+        </a>
+        <a href="leaderboard.html" class="nav-item">
+            <img src="images/FooterIcons/footer-leaderboard.png" alt="Leaderboard">
+            <p>Leaderboard</p>
+        </a>
+        <a href="" class="nav-item">
+            <img src="images/FooterIcons/footer-profile.png" alt="Profile">
+            <p>Profile</p>
+        </a>
+    </nav>
+    <script src="js/post-script.js"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+</body>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js').then(function (registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+            console.log('ServiceWorker registration failed: ', err);
+        });
+    }
+</script>
+
+</html>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="good_morning_chris">Good Morning, Chris!</string>
+    <string name="enter_text">Enter text</string>
+    <string name="album_art_description">Description for album art</string>
+    <string name="song_info_placeholder">Song Information Placeholder</string>
+    <string name="open_maps_placeholder">Tap Image to Pause</string>
+    <string name="arrow_menu">Arrow to go back to home</string>
+    <string name="mic_button">Button to speak in order to change music</string>
+    <string name="shuffle_button">Button to switch between shuffle or repeat</string>
+    <string name="menu_button">Button to open the hamburger menu</string>
+    <string name="swipe_txt">Swipe</string>
+</resources>

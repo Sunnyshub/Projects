@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Discover</title>
+    <meta name="author" content="Christiyan Borisov">
+    <meta name="description" content="Home page (forum) of duo case application">
+    <meta name="keywords" content="pwa, DuoCase, fontys ,smart mobile, community engagement">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+</head>
+
+<body class="home">
+    <section class="static">
+        <header class="title-header-home">
+            <ul>
+                <li>
+                    <h1 id="discovertext">Discover</h1>
+                </li>
+                <li>
+                    <h3 id="tiertext">Tier: Novice Helper</h3>
+                </li>
+            </ul>
+        </header>
+
+    </section>
+    <main>
+        <div class="space2"></div>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search location..." />
+        </div>
+
+
+        <div id="mapid">
+            <button class="add-activity-button">Add activity or request</button>
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-navbar">
+        <a href="home.html" class="nav-item">
+            <img src="images/FooterIcons/footer-home.png" alt="Home">
+            <p>Home</p>
+        </a>
+        <a href="map.html" class="nav-item">
+            <img src="images/FooterIcons/footer-compass.png" alt="Discover">
+            <p>Discover</p>
+        </a>
+        <a href="leaderboard.html" class="nav-item">
+            <img src="images/FooterIcons/footer-leaderboard.png" alt="Leaderboard">
+            <p>Leaderboard</p>
+        </a>
+        <a href="profile.html" class="nav-item">
+            <img src="images/FooterIcons/footer-profile.png" alt="Profile">
+            <p>Profile</p>
+        </a>
+    </nav>
+
+
+    <script src="js/scripts.js" type="text/javascript"></script>
+</body>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+<script>
+    var mymap = L.map('mapid').setView([51.4416, 5.4697], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+    }).addTo(mymap);
+
+    function onPopupButtonClick() {
+        alert('Event added');
+    }
+
+    function addPopup(marker, message) {
+        marker.bindPopup(message);
+        marker.on('popupopen', function () {
+            var button = document.querySelector('.join-event-button');
+            button.addEventListener('click', onPopupButtonClick);
+        });
+    }
+
+    var marker1 = L.marker([51.4416, 5.4697]).addTo(mymap);
+    addPopup(marker1, "<b>Jim vand der Joep</b><br>Join my workshop on christmas decorations<br><b>21.12.2023</b><br><button class='join-event-button'>Join event</button>");
+
+    var marker2 = L.marker([51.4500, 5.4800]).addTo(mymap);
+    addPopup(marker2, "<b>Lotte vand der Koppel</b><br>I need help with preparing my christmas meals and I need 2-3 volunteers.<br><b>22.12.2023</b><br><button class='join-event-button'>Join event</button>");
+
+    var marker3 = L.marker([51.4300, 5.4500]).addTo(mymap);
+    addPopup(marker3, "<b>Marry J</b><br>I am organizing a book reading club. Come join me! Every saturday from 10AM<br><b>25.12.2023</b><br><button class='join-event-button'>Join event</button>");
+
+
+
+    // dont allow landscape orientation (the shit breaks)
+    function lockOrientation() {
+        if (screen.orientation && screen.orientation.lock) {
+            screen.orientation.lock('portrait').catch(function (error) {
+                console.warn("Screen orientation lock wasn't applied: ", error);
+            });
+        } else {
+            console.warn("Screen orientation API is not supported on this device.");
+        }
+    }
+    document.addEventListener('DOMContentLoaded', lockOrientation);
+
+
+</script>
+
+</html>

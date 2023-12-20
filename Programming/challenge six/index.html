@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="codebox">
+        <section class="panel">
+            <div class="display"></div>
+            <div class="keypad">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>0</div>
+                <div>#</div>
+            </div>
+        </section>
+        
+        <aside class="lampbox">
+            <div class="lamps">
+                <div class="succes"></div>
+                <div class="error"></div>
+            </div>
+    </main>
+
+    <script>
+
+        // get all divs
+        const keyNumbers = document.querySelectorAll(".keypad div")
+        const enteredcode = new Array ();
+        const unlockCode = "0000";
+        const
+        console.log("code = " + unlockCode)
+
+        keyNumbers.forEach(key=> {
+            key.addEventListener('click', () => {
+                add_number (event.target.innerHTML)
+            })
+        })
+
+        let add_number = (number) => {
+            const display_number = document.createElement("span")
+            if(inserted_code.length == 0){
+                dsiplay.innerHTML
+            }
+            display_number.innerHTML = number
+            display.appendChild(display_number)
+            inserted_code.push(number)
+            if(inserted_code.length == valid.code.length){
+                check_the_code()
+                inserted_code.length=0
+            }
+        }
+
+        let check_the_code = () => {
+            let correct_code = true
+            inserted_code.forEach((number, index) => {
+                if(valid_code[index] != number) {correct_code=false}
+                console.log(valid_code[index])
+            })
+            feedback(correct_code,300)
+        }
+
+        let feedback = (succes, duration, count=1) => {
+            let querySelector
+            let repitions =0
+            if(succes){
+                querySelector = "#codebox .lamps .success"
+            }
+            else{ 
+                querySelector - "#codebox .lamps .error"
+            }
+            const lamp = document.querySelector(querySelector)
+            lamp.classList.add("active")
+        }
+
+        const reptitionInteval = setInterval(() = {
+            lamp.classList.add("active")
+            setTimeout(() => {
+                lamp.classList.remove("active")
+            }, duration)
+            repetitions++
+            if(repetitions == count){
+                clearInterval(repetitionInterval)
+            
+            }, duration+100)
+        }
+    </script>
+</body>
+</html>

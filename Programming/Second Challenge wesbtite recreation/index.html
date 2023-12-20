@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mogu Mogu website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Behold a navbar with flex -->
+    <nav>
+        <div class="flex-container">
+            <div><img src="img/hamburger.png" alt=""></div>
+            <div><img src="img/cropped-Logo.png" alt="Logo" width="140px"></div>
+            <div><img src="img/search.png" alt=""></div>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <!-- first background image -->
+            <div class="backgroundthing"><img src="img/firstbackground.png" alt=""></div>
+            <figure>
+                <div class="melon" id="melon"><img src="img/Meloen-99x100.png" alt="melon"></div>
+                <div class="berry" id="berry"><img src="img/blueberry.png" alt="berry"></div>
+                <div class="lychee" id="lychee"><img src="img/Lychee-150x125.png" alt="lychee"></div>
+                <div class="strawberry" id="strawberry"><img src="img/Aardbei-100x100.png" alt="strawberry"></div>
+                <div class="mango" id="mango"><img src="img/Mango-150x127.png" alt="mango"></div>
+                <div class="coconut" id="coconut"><img src="img/Kokosnoot-180x180.png" alt="coconut"></div>
+                <div class="textimage" id="textimage"><img src="img/Slogan-520x70.png" alt="slogan"></div>
+                <div class="textslogan" id="textslogan"><img src="img/You-gotta-chew-1024x111-400x43.png" alt="other-slogan"></div>
+                <div class="bottles" id="bottles"><img src="img/flesjes-1-1024x532-770x364.png" alt="mogumogubottles"></div>
+                <div class="lycheebottle" id="lycheebottle"><img src="img/lychee_flesje-150x262.png" alt="lycheebottle"></div>
+                <div class="mangobottle" id="mangobottle"><img src="img/Mangosap_flesje-200x352.png" alt="mangobottle"></div>
+                <div class="contact"><img id="roundedimage" src="img/fo ding.png" alt="info"></div>
+
+                <!-- all images -->
+
+                <div class="textabovebottles" id="textabovebottles"><p>Dit heerlijke fruitdrankje komt oorspronkelijk uit het tropische land Thailand.
+                    Mogu Mogu is door Real Tropical Food in 2010 geïntroduceerd in Nederland.
+                    Real Tropical Food is een frisdrank leverancier die uitzonderlijke drankjes op de markt brengt.</p></div>
+
+                    <!-- text on the lowest part of the page  -->
+                <div class="textunderslogan" id="textunderslogan"><p>Mogu Mogu is een exotische genotsdrank die zich onderscheidt middels het “Gotta Chew” concept. Dit is drinken terwijl men kauwt aan grote fruitstukjes. “Gotta Chew” is ook de slogan van MoGu MoGu.</p></div>
+                    <!-- text in between -->
+                <section class="textthing"><p class="title">MoGu MoGu verovert de wereld! </p> 
+                    <p class="othertext">  De heerlijke tropische smaken en de overheerlijke nata de coco stukjes trekken de aandacht van iedereen. MoGu MoGu is een exotisch fruitdrankje en is verslavend lekker. De heerlijke nata de coco stukjes die in verschillende smaken komen, geven MoGu MoGu iets bijzonders. <br> <br>
+                    
+                    MoGu MoGu is in Nederland de populairste tropische fruitdrink met nata de coco waar je elk moment van de dag van kan genieten. <br> <br>
+                    
+                    Deze tropische fruitdrank brengt je naar een hele andere wereld met tropische fantasieën. Kom in de wereld van MoGu MoGu en ervaar deze heerlijke belevenis.</p></section>
+                    <!-- First text thingy -->
+            </figure>
+        </article>
+
+        <article>
+            <div class="parallax"></div>
+            <div class="thirdbackground"></div>
+            <div class="fourthbackground"></div>
+        </article>
+<!-- parallax -->
+    </main>
+    <script>
+        // Declaring all the items as let
+        let melon = document.getElementById('melon');
+        let berry = document.getElementById('berry');
+        let lychee = document.getElementById('lychee');
+        let strawberry = document.getElementById('strawberry');
+        let textimage = document.getElementById('textimage');
+        let coconut = document.getElementById('coconut');
+        let textslogan = document.getElementById('textslogan');
+        let bottles = document.getElementById('bottles');
+        let textabovebottles = document.getElementById('textabovebottles');
+        let lycheebottle = document.getElementById('lycheebottle');
+        let mangobottle = document.getElementById('mangobottle');
+
+        // Scrolling will move all of these elements in a different pace
+        window.addEventListener("scroll", function() {
+            let value = window.scrollY;
+            melon.style.top = -value * 1 + 300 + 'px';
+            berry.style.top = -value * 0.3 + 700 + 'px';
+            lychee.style.top = -value * 0.1 + 890 + 'px';
+            strawberry.style.top = -value * 0.4 + 820 + 'px';
+            textimage.style.top = -value * 0.4 + 1400 + 'px';
+            coconut.style.top = -value * 0.5 + 1760 + 'px';
+            textslogan.style.top = -value * 0.3 + 1700 + 'px';
+            bottles.style.top = -value * 0.2 + 2999 + 'px';
+            textabovebottles.style.top = -value * 0.2 + 2850 + 'px';
+            lycheebottle.style.top = -value * 0.3 + 2999 + 'px';
+            mangobottle.style.top = -value * 0.3 + 2999 + 'px';
+        
+        })
+
+    </script>
+</body>
+</html>
