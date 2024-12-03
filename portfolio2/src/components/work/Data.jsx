@@ -14,7 +14,7 @@ export const projectsData = [
     image: Work1,
     title: "First Bootstrap Portfolio 2022",
     category: "web/apps",
-    link: "https://i467618.hera.fhict.nl/amogus/index.html", // Add your custom link here
+    link: "https://i467618.hera.fontysict.net/portfolio2022/index.html", // Add your custom link here
   },
   {
     id: 2,
@@ -28,14 +28,14 @@ export const projectsData = [
     image: Work5,
     title: "Brand design (Photoshop)",
     category: "design",
-    link: "http://localhost:3000/static/media/work5.ecc1c588054f37ef76eb.jpg", // Add your custom link here
+    link: "https://i467618.hera.fontysict.net/static/media/work5.ecc1c588054f37ef76eb.jpg", // Add your custom link here
   },
   {
     id: 4,
     image: Work4,
     title: "McHome PWA Mobile App",
     category: "web/apps",
-    link: "https://i467618.hera.fhict.nl/mchome/index-McHome.html", // Add your custom link here
+    link: "https://youtu.be/QpEAgObyrnU", // Add your custom link here
   },
   {
     id: 5,
@@ -56,7 +56,7 @@ export const projectsData = [
     image: Work7,
     title: "Photography Portfolio (InDesign)",
     category: "design",
-    link: "https://i467618.hera.fhict.nl/amogus/photography.pdf", // Add your custom link here
+    link: "https://i467618.hera.fontysict.net/portfolio2022/photography.pdf", // Add your custom link here
   },
   {
     id: 8,

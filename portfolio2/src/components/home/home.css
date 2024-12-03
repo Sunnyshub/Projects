@@ -54,7 +54,7 @@
 }
 
 .home__img {
-    background: url(C:\Users\Gebruiker\Desktop\portfolio2\src\assets\IMG_7358.jpg);
+    background: url("../../assets/IMG_7358.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
